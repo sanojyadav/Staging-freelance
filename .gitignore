@@ -1,0 +1,10 @@
+/app/etc/env.php
+/var/*
+
+/generated/*
+/vendor/*
+/node_modules/
+/composer.lock
+/auth.json
+/.idea/
+/.vscode

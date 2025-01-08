@@ -1,0 +1,38 @@
+.slsh-02 {
+    --el-bkg: #000;
+    --el-txt: #fff;
+    --el-gap: 0px;
+    --col-img-w: 50%;
+    .i-slide {
+        aspect-ratio: auto;
+        display: flex;
+        gap: var(--el-gap);
+    }
+    .sl-img {
+        flex: 0 0 var(--col-img-w);
+        position: relative;
+        inset: auto;
+        background: var(--el-bkg);
+    }
+    .sl-content {
+        position: relative;
+        inset: auto;
+        background: var(--el-bkg);
+        color: var(--el-txt);
+        .sl-ele {
+            position: relative;
+            inset: auto;
+        }
+    }
+    @media @phone {
+        .i-slide {
+            flex-direction:column;
+            &:before {
+                display: none;
+            }
+        }
+        .sl-img {
+            flex: auto;
+        }
+    }
+}

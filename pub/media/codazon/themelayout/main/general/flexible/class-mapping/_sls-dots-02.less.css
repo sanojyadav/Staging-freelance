@@ -1,0 +1,36 @@
+.sls-dots-02 {
+    --dot-w: 40px;
+	--dot-w-at: 80px;
+    --dot-h: 5px;
+    --dot-bkg: fade(@main_text, 30%);
+    --dot-bkg-at: fade(@main_text, 90%);
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        .owl-dot {
+            width: var(--dot-w);
+            height: var(--dot-h);
+            border-radius: 0;
+            pointer-events: initial;
+            background: var(--dot-bkg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            box-shadow: none;
+            transform: none;
+            span {
+                display: none;
+            }
+            &.active {
+				--dot-w: var(--dot-w-at);
+                background-color: var(--dot-bkg-at);
+            }
+        }
+    }
+	@media @phone {
+		--dot-w: 20px;
+		--dot-w-at: 40px;
+	}
+}

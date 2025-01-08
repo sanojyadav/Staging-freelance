@@ -1,0 +1,28 @@
+.cdz-quote-01 {
+    &:before {
+        content: '“';
+        font-size: 360%;
+        display: inline-flex;
+        margin-bottom: 15px;
+        vertical-align: bottom;
+        line-height: 0;
+        color: var(--quote-ic, inherit);
+        font-family: monospace;
+        .rtl-layout & {
+             content: '”';
+        }
+    }
+    .qt-note {
+        margin-top: 25px;
+        font-size: 85%;
+        .qt-sm-txt {
+            font-size: 85%;
+            text-transform: uppercase;
+        }
+    }
+    .qt-author {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: var(--quote-ic, inherit);
+    }
+}

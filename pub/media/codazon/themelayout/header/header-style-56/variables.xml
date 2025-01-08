@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<config>
+  <identifier>header-style-56</identifier>
+  <title>Header Style 56</title>
+  <variables>
+    <header_background>#292023</header_background>
+    <header_background_file></header_background_file>
+    <header_background_image_option>0 0</header_background_image_option>
+    <header_border>#424242</header_border>
+    <header_cart_background>transparent</header_cart_background>
+    <header_cart_border></header_cart_border>
+    <header_cart_icon>#f0e973</header_cart_icon>
+    <header_cart_quality_background>#F44336</header_cart_quality_background>
+    <header_cart_text>#ffffff</header_cart_text>
+    <header_drop_background>#ffffff</header_drop_background>
+    <header_drop_border_color>#dbdbdb</header_drop_border_color>
+    <header_drop_hover_text>#c9c7c7</header_drop_hover_text>
+    <header_drop_text>#282828</header_drop_text>
+    <header_hover_text>#e3deae</header_hover_text>
+    <header_mobile_background>#292023</header_mobile_background>
+    <header_mobile_icon>#ffffff</header_mobile_icon>
+    <header_mobile_search_border>#ffffff</header_mobile_search_border>
+    <header_mobile_search_input_background>#292023</header_mobile_search_input_background>
+    <header_mobile_search_input_border>#585858</header_mobile_search_input_border>
+    <header_mobile_search_input_text>#ffffff</header_mobile_search_input_text>
+    <header_mobile_search_text>#ffffff</header_mobile_search_text>
+    <header_search_background>#292023</header_search_background>
+    <header_search_button_background>#d60b15</header_search_button_background>
+    <header_search_button_text>#ffffff</header_search_button_text>
+    <header_search_text>#ffffff</header_search_text>
+    <header_shadow>0 -8px 10px #4f5eb0</header_shadow>
+    <header_text>#ffffff</header_text>
+    <header_text_cart>#999999</header_text_cart>
+    <header_top_background>#292023</header_top_background>
+    <header_top_text>#ffffff</header_top_text>
+    <menu_background>#292023</menu_background>
+    <menu_border>#EBEBEB</menu_border>
+    <menu_content_background>#22191c</menu_content_background>
+    <menu_content_border>#26292e</menu_content_border>
+    <menu_content_color>#ffffff</menu_content_color>
+    <menu_drop_background>#ffffff</menu_drop_background>
+    <menu_drop_border>#e1e1e1</menu_drop_border>
+    <menu_drop_font>300 14px/1.35  "Archivo", sans-serif</menu_drop_font>
+    <menu_drop_hover_text>#5c2900</menu_drop_hover_text>
+    <menu_drop_shadow>0 3px 3px #e1e1e1</menu_drop_shadow>
+    <menu_drop_text>#999999</menu_drop_text>
+    <menu_drop_text_title>#282828</menu_drop_text_title>
+    <menu_font>700 17px/1.35   "Archivo", sans-serif</menu_font>
+    <menu_hover_background>#262626</menu_hover_background>
+    <menu_hover_text>#f0e973</menu_hover_text>
+    <menu_text>#ffffff</menu_text>
+    <menu_title_background>#26292e</menu_title_background>
+    <menu_title_border>#212121</menu_title_border>
+    <menu_title_color>#ffffff</menu_title_color>
+    <vermenu_background>#ffffff</vermenu_background>
+    <vermenu_border>#efefef</vermenu_border>
+    <vermenu_font>400 14px/1.35  "Archivo", sans-serif</vermenu_font>
+    <vermenu_hover_background>#ed3f46</vermenu_hover_background>
+    <vermenu_hover_text>#ffffff</vermenu_hover_text>
+    <vermenu_text>#222222</vermenu_text>
+  </variables>
+  <layout_xml>&lt;body&gt;&#xD;
+    &lt;block name="header-extra-text-1" class="Codazon\ThemeLayoutPro\Block\Header" template="Codazon_ThemeLayoutPro::layout/header-content.phtml"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;content_type&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;content_1&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/block&gt;&#xD;
+    &lt;block name="header-extra-text-2" class="Codazon\ThemeLayoutPro\Block\Header" template="Codazon_ThemeLayoutPro::layout/header-content.phtml"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;content_type&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;content_2&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/block&gt;&#xD;
+        &#xD;
+    &lt;referenceContainer name="header.container" htmlClass="page-header header-style-56 home-pos-abs"&gt;&#xD;
+        &lt;container name="header-top" htmlTag="div" htmlClass="header-top" before="-" /&gt;&#xD;
+        &lt;container name="header-bottom" htmlTag="div" htmlClass="header-bottom" after="-" /&gt;&#xD;
+    &lt;/referenceContainer&gt;&#xD;
+    &lt;referenceContainer name="header.panel"&gt;&#xD;
+        &lt;container name="header-main" htmlTag="div" htmlClass="header-main container"&gt;&#xD;
+            &lt;container name="header-panel-row" htmlTag="div" htmlClass="row cdz-fix-left d-flex-center" after="skip_to_content"&gt;&#xD;
+                &lt;container name="header-panel-left" htmlTag="div" htmlClass="col-sm-12 col-md-5 header-panel-left" /&gt;&#xD;
+                &lt;container name="header-panel-middle" htmlTag="div" htmlClass="col-sm-24 col-md-14 header-panel-middle" /&gt;&#xD;
+                &lt;container name="header-panel-right" htmlTag="div" htmlClass="col-sm-12 col-md-5 header-panel-right" /&gt;&#xD;
+                &lt;container name="header-search-wrap" htmlId="header-search-wrap" htmlTag="div" htmlClass="col-sm-24 header-search-wrap" /&gt;&#xD;
+            &lt;/container&gt;&#xD;
+        &lt;/container&gt;&#xD;
+    &lt;/referenceContainer&gt;&#xD;
+    &#xD;
+    &lt;referenceBlock name="top.links"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;css_class&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;header links visible-xs&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &#xD;
+    &lt;referenceBlock name="top.links.features"&gt;&#xD;
+        &lt;block class="Magento\Framework\View\Element\Template" name="links.features.search" template="Magento_Search::search-trigger.phtml"  before="-"&gt;&#xD;
+            &lt;arguments&gt;&#xD;
+                &lt;argument name="html_class" xsi:type="string"&gt;search-link&lt;/argument&gt;&#xD;
+            &lt;/arguments&gt;&#xD;
+        &lt;/block&gt;&#xD;
+        &lt;block class="Magento\Framework\View\Element\Template" name="links.features.linkslist" template="Magento_Theme::html/custom-li.phtml"  after="-"&gt;&#xD;
+            &lt;arguments&gt;&#xD;
+                &lt;argument name="html_class" xsi:type="string"&gt;linkslist-link&lt;/argument&gt;&#xD;
+            &lt;/arguments&gt;&#xD;
+        &lt;/block&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &lt;referenceBlock name="utilities.toggle.linkslist"&gt;&#xD;
+        &lt;action method="setDirection"&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;right&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &#xD;
+    &lt;move element="header-extra-text-1" destination="header-top" before="-" /&gt;&#xD;
+    &lt;move element="header-extra-text-2" destination="header-bottom" /&gt;&#xD;
+    &lt;move element="header-store-info" destination="header-panel-top" /&gt;    &#xD;
+    &lt;move element="top.links.features" destination="header-panel-right" /&gt;&#xD;
+    &lt;move element="mobi-cart-placeholder" destination="header-search-wrap" /&gt;&#xD;
+    &lt;move element="top.search" destination="header-search-wrap" /&gt;&#xD;
+    &lt;move element="header-links-list" destination="utilities.sidebar.right" /&gt;&#xD;
+    &lt;move element="links.features.cart" destination="top.links.features" after="authorization-link-features" before="links.features.linkslist" /&gt;&#xD;
+    &lt;move element="utilities.toggle.linkslist" destination="links.features.linkslist" /&gt;&#xD;
+    &#xD;
+    &lt;move element="logo" destination="header-panel-left" /&gt;&#xD;
+    &lt;move element="catalog.topnav" destination="header-panel-middle" after="-" /&gt;&#xD;
+    &lt;move element="store-menu-placeholder" destination="store.menu" /&gt;&#xD;
+    &lt;move element="minicart" destination="links.features.cart" /&gt;&#xD;
+    &lt;referenceBlock name="header-contact-link" remove="true" /&gt;&#xD;
+    &lt;referenceBlock name="wish-list-link-features" remove="true" /&gt;&#xD;
+    &#xD;
+    &#xD;
+    &lt;referenceBlock name="minicart"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;icon_html&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;&lt;![CDATA[&lt;span class="hd-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"&gt;&lt;path d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z"/&gt;&lt;/svg&gt;&lt;/span&gt;]]&gt;&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &lt;referenceBlock name="authorization-link-features"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;icon_html&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;&lt;![CDATA[&lt;span class="hd-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"&gt;&lt;path d="M313.6 288c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4zM416 464c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16v-41.6C32 365.9 77.9 320 134.4 320c19.6 0 39.1 16 89.6 16 50.4 0 70-16 89.6-16 56.5 0 102.4 45.9 102.4 102.4V464zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"/&gt;&lt;/svg&gt;&lt;/span&gt;]]&gt;&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &lt;referenceBlock name="links.features.search"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;icon_html&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;&lt;![CDATA[&lt;span class="hd-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"&gt;&lt;path d="M508.5 481.6l-129-129c-2.3-2.3-5.3-3.5-8.5-3.5h-10.3C395 312 416 262.5 416 208 416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c54.5 0 104-21 141.1-55.2V371c0 3.2 1.3 6.2 3.5 8.5l129 129c4.7 4.7 12.3 4.7 17 0l9.9-9.9c4.7-4.7 4.7-12.3 0-17zM208 384c-97.3 0-176-78.7-176-176S110.7 32 208 32s176 78.7 176 176-78.7 176-176 176z"/&gt;&lt;/svg&gt;&lt;/span&gt;]]&gt;&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+    &lt;referenceBlock name="utilities.toggle.linkslist"&gt;&#xD;
+        &lt;action method="setData"&gt;&#xD;
+            &lt;argument name="name" xsi:type="string"&gt;icon_html&lt;/argument&gt;&#xD;
+            &lt;argument name="value" xsi:type="string"&gt;&lt;![CDATA[&lt;span class="hd-icon"&gt;&lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"&gt;&lt;path d="M24 2v2H0V2h24ZM0 22h8v-2H0v2Zm0-9h16v-2H0v2Z"&gt;&lt;/path&gt;&#xD;
+&lt;/svg&gt;&lt;/span&gt;]]&gt;&lt;/argument&gt;&#xD;
+        &lt;/action&gt;&#xD;
+    &lt;/referenceBlock&gt;&#xD;
+&lt;/body&gt;</layout_xml>
+  <custom_variables/>
+  <custom_fields>
+    <version>66b411293a592</version>
+    <custom_variables></custom_variables>
+    <custom_less_code></custom_less_code>
+    <custom_css_code></custom_css_code>
+  </custom_fields>
+  <parent/>
+  <content>{"content_1":"","content_2":""}</content>
+</config>

@@ -1,0 +1,50 @@
+@var_breakpoints: 0,576,768,992,1200;
+._cdzMakeGrid(@var_grid_breakpoint) { 
+    @media (min-width: ~'@{var_breakpoint}px') {
+        --items-count: ~'var(--items-@{var_breakpoint}, var(--items-all))';
+    }
+}
+._cdzGridBase(@i: length(@var_breakpoints)) when (@i > 0) {
+    ._cdzGridBase(@i - 1);
+    @var_breakpoint: extract(@var_breakpoints, @i);
+    ._cdzMakeGrid(@var_breakpoint);
+}
+.cdz-grid-base {
+    --i-gap: var(--items-gap);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: var(--i-gap);
+	@media @phone {
+		--i-gap: min(10px, --items-gap);
+	}
+}
+.cdz-grid-base {
+    ._cdzGridBase();
+    .cdz-item {
+        width: ~'calc((100% - (var(--items-count) - 1) * var(--i-gap)) / var(--items-count))';
+        min-width: ~'calc((100% - (var(--items-count) - 1) * var(--i-gap)) / var(--items-count))';
+    }
+    .owl-item {
+        display: flex;
+    }
+    .owl-item > .cdz-item {
+        width: 100%;
+        min-width: 100%;
+    }
+    &.cdz-slider {
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+}
+
+
+/************** Marquee **************/
+@keyframes cdzTranslateX {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(var(--mq-tran-x,-100%));
+    }
+}

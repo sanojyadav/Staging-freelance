@@ -1,0 +1,61 @@
+.tabs-style-19 {
+    @media @tablet_vertical {
+        --i-title-w: 400px;
+        display: inline-block;
+        width: 100%;
+        .cdz-block-title {
+            text-align: start;
+            min-height: 122px;
+            max-width: var(--i-title-w);
+            margin-bottom: 20px;
+        }
+        .box-cate-link {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: end;
+            margin-top: -70px;
+            margin-bottom: 50px;
+            max-width: ~'calc(100% - var(--i-title-w))';
+            float: inline-end;
+            > li {
+                padding: 0;
+                margin: 0;
+            }
+            .tab-title {
+                display: flex;
+                padding: 5px 22px;
+                border-radius: 30px;
+                border: 2px solid @btn_primary_border;
+                background: @btn_primary_text;
+                color: @btn_primary_background;
+                font-weight: normal;
+            }
+            .active .tab-title {
+                background: @btn_primary_background;
+                color: @btn_primary_text;
+                border-color: @btn_primary_border;
+            }
+        }
+        .cdz-tabs {
+            width: 100%;
+            float: inline-start;
+        }
+    }
+    .mobile-tabs-style-01();
+    @media @phone{
+        .mobile-toggle{
+            background: @btn_primary_text;
+            color: @btn_primary_background;
+            border: 2px solid @btn_primary_border;
+            border-radius: 30px;
+            font-weight: normal;
+        }
+        .abs-dropdown > li.active {
+             background: @btn_primary_background;
+             a {
+                 color: @btn_primary_text;
+             }
+        }
+    }
+}

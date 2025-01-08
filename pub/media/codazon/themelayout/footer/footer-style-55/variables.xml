@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<config>
+  <identifier>footer-style-55</identifier>
+  <title>Footer Style 55</title>
+  <variables>
+    <footer_background>#ffffff</footer_background>
+    <footer_background_file></footer_background_file>
+    <footer_background_image_option></footer_background_image_option>
+    <footer_background_normal>#ffffff</footer_background_normal>
+    <footer_border>#ededed</footer_border>
+    <footer_bottom_background>#ffffff</footer_bottom_background>
+    <footer_font>14px</footer_font>
+    <footer_hover_text>#5c2900</footer_hover_text>
+    <footer_text>#333333</footer_text>
+    <footer_text_normal>#333333</footer_text_normal>
+    <footer_title_font>18px</footer_title_font>
+    <footer_title_text>#000000</footer_title_text>
+    <footer_top_background>#ffffff</footer_top_background>
+  </variables>
+  <layout_xml>&lt;body&gt;&#xD;
+    &lt;referenceBlock name="footer_links" remove="true" /&gt;&#xD;
+    &lt;referenceBlock name="copyright" remove="true" /&gt;&#xD;
+    &lt;referenceBlock name="report.bugs" remove="true" /&gt;&#xD;
+    &lt;referenceBlock name="form.subscribe" remove="true" /&gt;&#xD;
+    &lt;move element="theme-layout-footer" destination="footer-container" /&gt;&#xD;
+&#xD;
+ &lt;block class="Magento\Store\Block\Switcher" name="footer-switch-language" template="Magento_Store::switch/languages-style-02.phtml" /&gt;&#xD;
+    &lt;block class="Magento\Directory\Block\Currency" name="footer-switch-currency" template="Magento_Directory::currency-style-02.phtml" /&gt;&#xD;
+&lt;/body&gt;</layout_xml>
+  <custom_variables/>
+  <custom_fields>
+    <version>6603efa44430a</version>
+    <auto_detect_files>
+      <item>_instagram.less.css</item>
+    </auto_detect_files>
+    <custom_variables></custom_variables>
+    <custom_less_code></custom_less_code>
+    <custom_css_code></custom_css_code>
+    <flexible_less/>
+  </custom_fields>
+  <parent></parent>
+  <content>&lt;div class="footer-style-55"&gt;&#xD;
+    &lt;div class="container-fluid"&gt;&#xD;
+        &lt;div class="footer content"&gt;&#xD;
+            &lt;div class="footer-top"&gt;&#xD;
+                &lt;div class="container"&gt;&#xD;
+                    &lt;div class="row d-flex-center"&gt;&#xD;
+                        &lt;div class="col-sm-12"&gt;&#xD;
+                            &lt;div class="footer-intro"&gt;&#xD;
+                                &lt;div class="i-subtitle"&gt;Build custom furniture&lt;/div&gt;&#xD;
+                                &lt;div class="i-title"&gt;Craft Own Furniture&lt;/div&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                        &lt;div class="col-sm-12"&gt;&#xD;
+                            &lt;div class="newsletter-block"&gt;&#xD;
+                                &lt;div class="i-title h5"&gt;Newsletter&lt;/div&gt;&#xD;
+                                &lt;div class="i-subtitle"&gt;Subsribe to receive our offers and enjoy 10% discount on your first order.&lt;/div&gt;&#xD;
+                                &lt;div class="i-content"&gt;{{block class="Magento\Newsletter\Block\Subscribe" name="cdz.newsletter" template="Magento_Newsletter::subscribe.phtml"}}&lt;/div&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                    &lt;/div&gt;&#xD;
+                &lt;/div&gt;&#xD;
+            &lt;/div&gt;&#xD;
+            &lt;div class="footer-middle"&gt;&#xD;
+                &lt;div class="container"&gt;&#xD;
+                    &lt;div class="row"&gt;&#xD;
+                        &lt;div class="col-sm-24"&gt;&#xD;
+                            &lt;div class="row"&gt;&#xD;
+                                &lt;div class="col-md-6 col-sm-12"&gt;&#xD;
+                                    &lt;div class="footer-box"&gt;&#xD;
+                                        &lt;p class="h5" data-cdz-toggle="#footer-content-3"&gt;Orders &amp;amp; Returns&lt;/p&gt;&#xD;
+                                        &lt;ul id="footer-content-3" class="footer-link showhide hover-link01"&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Order Status&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Shipping, Delivery &amp;amp; Store Pickup&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Return &amp;amp; Exchange Promise&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Price Match Guarantee&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li class="last"&gt;&lt;a href="#"&gt;Pay with Points&lt;/a&gt;&lt;/li&gt;&#xD;
+                                        &lt;/ul&gt;&#xD;
+                                    &lt;/div&gt;&#xD;
+                                &lt;/div&gt;&#xD;
+                                &lt;div class="col-md-6 col-sm-12"&gt;&#xD;
+                                    &lt;div class="footer-box"&gt;&#xD;
+                                        &lt;p class="h5" data-cdz-toggle="#footer-content-4"&gt;Support and services&lt;/p&gt;&#xD;
+                                        &lt;ul id="footer-content-4" class="footer-link showhide hover-link01"&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Customer Service&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Protection Plans&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Schedule a Service&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Trade-In Program&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li class="last"&gt;&lt;a href="#"&gt;Product Recalls&lt;/a&gt;&lt;/li&gt;&#xD;
+                                        &lt;/ul&gt;&#xD;
+                                    &lt;/div&gt;&#xD;
+                                &lt;/div&gt;&#xD;
+                                &lt;div class="col-md-6 col-sm-12"&gt;&#xD;
+                                    &lt;div class="footer-box"&gt;&#xD;
+                                        &lt;p class="h5" data-cdz-toggle="#footer-content-5"&gt;FAQs&lt;/p&gt;&#xD;
+                                        &lt;ul id="footer-content-5" class="footer-link showhide hover-link01"&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Returns Policy&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Product Recalls&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Feedback&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li&gt;&lt;a href="#"&gt;Tax Exempt Program&lt;/a&gt;&lt;/li&gt;&#xD;
+                                            &lt;li class="last"&gt;&lt;a href="#"&gt;Store Pickup&lt;/a&gt;&lt;/li&gt;&#xD;
+                                        &lt;/ul&gt;&#xD;
+                                    &lt;/div&gt;&#xD;
+                                &lt;/div&gt;&#xD;
+                                &lt;div class="col-md-6 col-sm-12"&gt;&#xD;
+                                    &lt;div class="footer-box"&gt;&#xD;
+                                        &lt;p class="h5 padding-title" data-cdz-toggle="#footer-content-6"&gt;Instagram&lt;/p&gt;&#xD;
+                                        &lt;div id="footer-content-6"&gt;&#xD;
+                                            &lt;div class="instagram-wrapper"&gt;&#xD;
+                                                &lt;div class="photo-items items"&gt;{{widget type="Codazon\ThemeLayoutPro\Block\Widget\Instagramphotos" custom_template="widget/instagramphotos/grid-style-02.phtml" access_token="3893338542.38fb276.e8dbfaac57214bf69c0439027ee39d85" use_user_id="1" user_id="7292707175" show_slider="0" max_items="8" total_rows="1" items_1900="6" items_1600="5" items_1420="5" items_1280="5" items_980="4" items_768="3" items_480="3" items_320="2" items_0="2"}}&lt;/div&gt;&#xD;
+                                            &lt;/div&gt;&#xD;
+                                        &lt;/div&gt;&#xD;
+                                    &lt;/div&gt;&#xD;
+                                &lt;/div&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                    &lt;/div&gt;&#xD;
+                &lt;/div&gt;&#xD;
+            &lt;/div&gt;&#xD;
+            &lt;div class="footer-bottom"&gt;&#xD;
+                &lt;div class="container"&gt;&#xD;
+                    &lt;div class="row d-flex-center"&gt;&#xD;
+                        &lt;div class="col-sm-6"&gt;&#xD;
+                            &lt;div class="footer-address"&gt;&#xD;
+                                &lt;p&gt;&#xA9;2024 Codazon . All rights reserved.&lt;/p&gt;&#xD;
+                                &lt;p&gt;SEATIVE DIGITAL&lt;/p&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                        &lt;div class="col-sm-12 text-center"&gt;&#xD;
+                            &lt;div class="footer-social"&gt;&#xD;
+                                &lt;a class="i-link" href="#"&gt;Facebook&lt;/a&gt;&#xD;
+                                &lt;a class="i-link" href="#"&gt;Instagram&lt;/a&gt;&#xD;
+                                &lt;a class="i-link" href="#"&gt;Twitter&lt;/a&gt;&#xD;
+                                &lt;a class="i-link" href="#"&gt;LinkedIn&lt;/a&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                        &lt;div class="col-sm-6 text-end"&gt;&#xD;
+                            &lt;div class="footer-address"&gt;&#xD;
+                                &lt;p&gt;6505 boulevard Henri-Bourassa&lt;/p&gt;&#xD;
+                                &lt;p&gt;MONTR&#xC9;AL, QUEBEC&lt;/p&gt;&#xD;
+                            &lt;/div&gt;&#xD;
+                        &lt;/div&gt;&#xD;
+                    &lt;/div&gt;&#xD;
+                &lt;/div&gt;&#xD;
+            &lt;/div&gt;&#xD;
+        &lt;/div&gt;&#xD;
+    &lt;/div&gt;&#xD;
+&lt;/div&gt;</content>
+</config>

@@ -1,0 +1,12 @@
+.slsh-02.sls-eff-01 {
+    .sl-img img {
+        transition: 1s;
+    } 
+    .i-slide:hover {
+        .sl-img {
+            > img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+.sl-spin {
+    animation: fa-spin var(--ef-dur, 10s) infinite linear;
+}

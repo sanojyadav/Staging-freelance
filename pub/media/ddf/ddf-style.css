@@ -1,0 +1,26 @@
+.terminal-selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.terminal-selection .terminal-txt{
+    margin-bottom: 3px;
+}
+
+.terminal-icon img{
+    height: 31px;
+    margin-right: 5px;;
+}
+.customer-service-text{
+    color: grey;
+}
+
+.terminals a {
+    color:#9C2350 !important;
+    opacity: .3;
+}
+.terminals a.selected{
+    opacity: 1 !important;
+}

@@ -1,0 +1,41 @@
+.sls-dots-01 {
+    --dot-w: 8px;
+    --dot-bdr: 50%;
+    --dot-bkg: transparent;
+    --dot-bd: @btn_primary_text;
+    --dot-bd-at: @btn_primary_background;
+    --dot-gap: 12px;
+    --dot-pd: 16px;
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        gap: var(--dot-gap);
+        .owl-dot {
+            width: ~'calc(var(--dot-w) + var(--dot-pd))';
+            height: ~'calc(var(--dot-w) + var(--dot-pd))';
+            border-radius: var(--dot-bdr);
+            pointer-events: initial;
+            background: var(--dot-bkg);
+            border: 2px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s;
+            span {
+                width: var(--dot-w);
+                height: var(--dot-w);
+                border-radius: var(--dot-bdr);
+                background: var(--dot-bd);
+                display: flex;
+            }
+            &.active {
+                border-color: var(--dot-bd);
+            }
+        }
+    }
+    @media @phone {
+        --dot-w: 4px;
+        --dot-gap: 8px;
+        --dot-pd: 8px;
+    }
+}

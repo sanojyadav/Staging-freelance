@@ -1,0 +1,41 @@
+.cdz-marquee-01 {
+    --i-bkg: #ff0a0a;
+    --i-txt: #fff;
+    --i-txt-hv: #fff09a;
+    --i-ic-w: 35px;
+    --i-pd: 22px 40px;
+    .mq-inner {
+        background: var(--i-bkg);
+        color: var(--i-txt);
+        a {
+            color: var(--i-txt);
+        }
+    }
+    .mq-item:hover {
+        color: var(--i-txt-hv);
+    }
+    .mq-item {
+        padding: var(--i-pd);
+        font-size: 140%;
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: relative;
+        transition: .5s;
+        &:after {
+            position: absolute;
+            top: ~'calc(50% - var(--i-ic-w)/2)';
+            inset-inline: auto ~'calc(-1 * var(--i-ic-w)/2)';
+            content: '';
+            width: var(--i-ic-w);
+            height: var(--i-ic-w);
+            background: currentColor;
+            mask: url(../../images/icons/icon-butterfly.png);
+            -webkit-mask: url(../../images/icons/icon-butterfly.png);
+            mask-size: 100%;
+            -webkit-mask-size: 100%;
+        }
+        &:hover:after {
+            animation: tada 1s infinite;
+        }
+    }
+}

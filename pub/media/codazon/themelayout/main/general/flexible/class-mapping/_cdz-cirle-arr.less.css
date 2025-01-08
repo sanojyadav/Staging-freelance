@@ -1,0 +1,45 @@
+.cdz-cirle-arr[class] {
+    --i-w: 70px;
+    --i-bkg: var(--el-txt, #fff);
+    --i-txt: #000;
+    --i-bkg-hv: @btn_hover_background;
+    --i-txt-hv: @btn_hover_text;
+    width: var(--i-w);
+    height: var(--i-w);
+    border-radius: 50%;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    background: var(--i-bkg);
+    position: relative;
+    transition: .5s;
+    &:not(.fa):before {
+        font: 900 normal 26px / 1 CodazonFont;
+        content: '\e971';
+        color: var(--i-txt);
+    }
+    &.fa {
+        font-family: inherit;
+    }
+    &.fa:before {
+        font: normal normal 30px / 1 FontAwesome;
+        color: var(--i-txt);
+    }
+    > svg {
+        width: ~'calc(100% + 60px)';
+        fill: var(--i-bkg);
+        position: absolute;
+        font-size: 15px;
+        direction: ltr;
+    }
+    &:hover {
+        background: var(--i-bkg-hv);
+        &:before {
+            color: var(--i-txt-hv);
+        }
+        /* > svg {
+            fill: var(--i-bkg-hv);
+        } */
+    }
+}

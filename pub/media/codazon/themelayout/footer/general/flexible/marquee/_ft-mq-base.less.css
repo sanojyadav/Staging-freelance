@@ -1,0 +1,38 @@
+.ft-mq-01 {
+    --mq-dur: 80s;
+    .mq-items {
+        display: flex;
+        flex-wrap: nowrap;
+        animation: cdzTranslateX var(--mq-dur) linear infinite;
+        width: auto;
+        display: inline-flex;
+        position: relative;
+        > div {
+            white-space: nowrap;
+            display: inline-flex;
+        }
+    }
+    .mq-items-fill {
+        position: absolute;
+        inset-inline: 100% auto;
+        top: 0;
+    }
+    &.mq-reverse {
+        inset-inline: auto 100%;
+        --mq-tran-x: 100%;
+        .mq-items-fill {
+            inset-inline: auto 100%;
+        }
+    }
+    &.mq-stop-hv:hover {
+        .mq-items {
+            animation-play-state: paused;
+        }
+    }
+    .rtl-layout & {
+        --mq-tran-x: 100%;
+        &.mq-reverse {
+            --mq-tran-x: -100%;
+        }
+    }
+}
